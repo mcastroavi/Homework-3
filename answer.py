@@ -24,7 +24,7 @@ def string_formating():
     
     # Format large_number to be a string and assign it to the variable comma_string. The contents of comma_string
     # should have the appropriate commas. (Comma separator). Example; 1000 should be "1,000"
-    comma_string ="{:.,}".format(large_number)
+    comma_string ='{:.,}'.format(large_number)
 
     # Format large_number to be a string and assign it to the variable exp_string. The contents of exp_string
     # should be exponent notation (with two decimal places).
