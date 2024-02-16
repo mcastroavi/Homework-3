@@ -18,13 +18,13 @@ def string_formating():
     math_pi = 3.141592653589793
 
     # Format the variable math_pi as a string with 6 decimal places and assign it to variable string_pi
-    string_pi = '{0:0.6f}'.format(math_pi)
+    string_pi = '{0:.6f}'.format(math_pi)
     ####
     large_number=100000000
     
     # Format large_number to be a string and assign it to the variable comma_string. The contents of comma_string
     # should have the appropriate commas. (Comma separator). Example; 1000 should be "1,000"
-    comma_string ='{:.,}'.format(large_number)
+    comma_string ="{:,}".format(large_number)
 
     # Format large_number to be a string and assign it to the variable exp_string. The contents of exp_string
     # should be exponent notation (with two decimal places).
@@ -34,7 +34,7 @@ def string_formating():
 
     # Format small_number to be a string and assign it to the variable center_string. The format for center_string
     # should be Center aligned with a width of 10.
-    center_string= '{:^10}'.format(small_number)
+    center_string= '{:^10d}'.format(small_number)
     return string_pi,comma_string,exp_string,center_string,
 
 
